@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HelloWorld from "../components/HelloWorld.vue";
+import Index from "../views/Index.vue";
 
 Vue.use(VueRouter);
 
@@ -10,8 +10,8 @@ const router = new VueRouter({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: HelloWorld,
+      name: "index",
+      component: Index,
     },
   ],
 });
