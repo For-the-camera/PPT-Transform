@@ -43,9 +43,9 @@ export default {
       return Array.from(configList, (config, index) => {
         if (index === 0) {
           config.state = "process";
-          return config;
+        } else {
+          config.state = "wait";
         }
-        config.state = "wait";
         return config;
       });
     },
